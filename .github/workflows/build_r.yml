@@ -90,5 +90,5 @@ jobs:
         with:
           name: macos-${{ env.version }}
           path: "rio/release"
-          retention-days: 3
+          retention-days: 30
 
