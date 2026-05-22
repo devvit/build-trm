@@ -108,4 +108,4 @@ jobs:
         with:
           name: macos-${{ env.version }}
           path: "wezterm/WezTerm-*.zip"
-          retention-days: 3
+          retention-days: 30
