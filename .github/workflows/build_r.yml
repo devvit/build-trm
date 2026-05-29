@@ -2,8 +2,8 @@ name: Build R
 
 on:
   # push:
-  schedule:
-    - cron: '0 0 28 * *'
+  # schedule:
+  #  - cron: '0 0 28 * *'
 
 jobs:
   linux64_build:
