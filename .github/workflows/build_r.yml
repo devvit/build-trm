@@ -2,8 +2,8 @@ name: Build R
 
 on:
   # push:
-  # schedule:
-  #  - cron: '0 0 28 * *'
+  schedule:
+    - cron: '0 0 28 * *'
 
 jobs:
   linux64_build:
@@ -30,7 +30,7 @@ jobs:
           name: linux-${{ env.version }}
           path: |
             rio/target/release/rio
-          retention-days: 3
+          retention-days: 30
 
   windows64_build:
     name: Windows x86_64 Build
@@ -61,7 +61,7 @@ jobs:
           name: windows-${{ env.version }}
           path: |
             rio/target/release/*.exe
-          retention-days: 3
+          retention-days: 30
 
   macos_build:
     name: macOS Build
