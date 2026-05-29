@@ -38,7 +38,7 @@ jobs:
             wezterm/*src.tar.gz
             wezterm/*.AppImage
             wezterm/*.zsync
-          retention-days: 3
+          retention-days: 30
 
   windows64_build:
     name: Windows x86_64 Build
@@ -75,7 +75,7 @@ jobs:
           path: |
             wezterm/WezTerm-*.zip
             wezterm/WezTerm-*.exe
-          retention-days: 3
+          retention-days: 30
 
   macos_build:
     name: macOS Build
