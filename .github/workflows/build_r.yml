@@ -1,9 +1,11 @@
 name: Build R
 
 on:
-  # push:
-  # schedule:
-  #  - cron: '0 0 28 * *'
+  push:
+    paths:
+      - '**.js'
+  schedule:
+   - cron: '0 0 28 * *'
 
 jobs:
   linux64_build:

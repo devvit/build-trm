@@ -1,7 +1,9 @@
 name: Build W
 
 on:
-  # push:
+  push:
+    paths:
+      - '**.js'
   schedule:
     - cron: '0 0 28 * *'
 
